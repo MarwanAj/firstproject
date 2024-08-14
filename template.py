@@ -15,6 +15,7 @@ list_of_files = [
     "src/pipeline/prediction_pipeline.py",
     "src/utils/__init__.py",
     "src/utils/utils.py",
+    "src/expetion/exeption"
     "test/unit/__init__.py",
     "test/integration/__init__.py",
     "init_setup.sh",
@@ -37,6 +38,6 @@ for file in list_of_files:
         os.makedirs(file_dir, exist_ok=True)
         print(f"Creating directory {file_dir} for file {file_name}")
 
-    if (not os.path.exists(path)) or (os.path. getsize(filepath)==0):
+    if (not os.path.exists(path)) or (os.path. getsize(path)==0):
         with open(path, "w"):
             pass
